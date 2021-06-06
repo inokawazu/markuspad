@@ -21,8 +21,15 @@ Here are some books that are my **personal** favorites.
 > To learn General Relativity the "Right Way"
 > [General Relativity](https://press.uchicago.edu/ucp/books/book/chicago/G/bo5952261.html)
 
+> Learning Physics with Geometry? This book is the way to go.
+> [Geometry, Topology and Physics](https://www.amazon.com/Geometry-Topology-Physics-Graduate-Student/dp/0750306068)
+
 > A sad story about a sad boy.
 > [Kafka On The Shore (カフカの海辺)](https://press.uchicago.edu/ucp/books/book/chicago/G/bo5952261.html)
+
+> Any book by Alastair Reynolds is great and I have read (listened to) many of them.
+> Here is a subset.
+> [Revelation Space Universe Books](Revelation Space universe) and [Century Rain](https://en.wikipedia.org/wiki/Century_Rain)
 
 > A book that really helped me get a leg up on my Japanese language studies.
 > There is a free version online, but you can of course buy the book via Amazon.

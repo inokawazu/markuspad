@@ -2,10 +2,10 @@
 
 # Current Research
 
-- Hydrodynamics with holographic tenchiques
+- Hydrodynamics with holographic techniques
 - The analytical structure of holographic greens functions of black branes
 
-# Past Research
+# Published Research
 
 - [Hydrodynamics of simply spinning black holes & hydrodynamics for spinning quantum fluids](https://link.springer.com/article/10.1007/JHEP12(2020)112)
 - [Resonating AdS Soliton](https://link.springer.com/article/10.1007/JHEP08(2020)136)
