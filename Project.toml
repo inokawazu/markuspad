@@ -1,0 +1,7 @@
+name = "blog"
+uuid = "15305bf4-f02c-4235-83ea-12e1ed626782"
+authors = ["Markus-Amano <markus.a.amano@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
