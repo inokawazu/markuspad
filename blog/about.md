@@ -21,7 +21,7 @@ Here are some books that are my **personal** favorites.
 > To learn General Relativity the "Right Way"
 > [General Relativity](https://press.uchicago.edu/ucp/books/book/chicago/G/bo5952261.html)
 
-> A sad story about a boy.
+> A sad story about a sad boy.
 > [Kafka On The Shore (カフカの海辺)](https://press.uchicago.edu/ucp/books/book/chicago/G/bo5952261.html)
 
 > A book that really helped me get a leg up on my Japanese language studies.
