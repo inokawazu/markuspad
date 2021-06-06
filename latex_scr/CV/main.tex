@@ -1,0 +1,387 @@
+% FortySecondsCV LaTeX template
+% Copyright © 2019 René Wirnata <rene.wirnata@pandascience.net>
+% Licensed under the 3-Clause BSD License. See LICENSE file for details.
+%
+% Attributions
+% ------------
+% * fortysecondscv is based on the twentysecondcv class by Carmine Spagnuolo 
+%   (cspagnuolo@unisa.it), released under the MIT license and available under
+%   https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% * further attributions are indicated immediately before corresponding code
+
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+  a4paper, 
+%   showframes,
+%   vline=2.2em,
+   maincolor=Green,
+   sectioncolor=Green,
+   subsectioncolor=Green,
+%   itemtextcolor=black!80,
+%   sidebarwidth=0.4\paperwidth,
+%   topbottommargin=0.03\paperheight,
+%   leftrightmargin=20pt,
+%   proilepicsize=4.5cm,
+]{fortysecondscv}
+
+
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+% \newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+% \usepackage[sfdefault]{noto} % use noto google font
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+  % defaut font size is \large, so adjust to harmonize with sidebar layout
+  bubble center node font = \footnotesize,
+  bubble node font = \footnotesize,
+  % default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+  bubble center node size = 0.4\sidebartextwidth,
+  bubble node size = 0.25\sidebartextwidth,
+  distance center/other bubbles = 1.5em,
+  % set center bubble color
+  bubble center node color = maincolor!70,
+  % define the list of colors usable in the diagram
+  set color list = {maincolor!10, maincolor!40,
+  maincolor!20, maincolor!60, maincolor!35},
+  % sets the opacity at which the bubbles are shown
+  bubble fill opacity = 0.8,
+}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+%% mandatory information
+% your name
+\cvname{Markus Antonio Amano}
+% job title/career
+\cvjobtitle{Physicist, PhD Canidate}
+
+%% optional information
+% profile picture
+\cvprofilepic{pics/profile.jpg}
+
+% NOTE: ordering in sidebar will mimic the following order
+% date of birth
+\cvbirthday{March 5, 1994}
+% short address/location, use \newline if more than 1 line is required
+\cvaddress{Gallalee Hall Tuscaloosa, AL 35487}
+% phone number
+\cvphone{+01 970 507 0865}
+% personal website
+\cvcustomdata{\faHome}{\href{https://www.markuspad.com}{www.markuspad.com}}
+% email address
+\cvmail{magarbiso@crimson.ua.edu}
+% pgp key
+%\cvkey{4096R/FF00FF00}{0xAABBCCDDFF00FF00}
+% any other custom entry
+\cvcustomdata{\faFlag}{American (Citizen of the USA)}
+% any other custom entry
+\cvcustomdata{\faLeanpub}{\href{https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=a\%20M.Garbiso.1&ui-citation-summary=true}{\textcolor{blue}{\underline{Publication Count: 3} \underline{(Expected before Graduation: 8)}}}}
+% any other custom entry
+\cvcustomdata{\faGithub}{\href{https://github.com/inokawazu}{inokawazu}}
+\cvcustomdata{\faLightbulbO}{Research Interest: Holography, Hydrodynamics, Higher Dimensional Gravity, String Theory}
+\cvcustomdata{\faImage}{Birth Surname: Garbiso}
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+	% include gosquare national flags from https://github.com/gosquared/flags;
+	% naming according to ISO 3166-1 alpha-2 country codes
+	\graphicspath{{pics/flags/}}
+
+	% social network accounts incl. proper hyperlinks
+% 	\profilesection{Social Network}
+% 		\begin{icontable}{2.5em}{1em}
+% 		    % overleaf still not supports Academicons and FontAwesome5 for XeLaTeX, which contain the overleaf logl...unbelievable...
+% 		    %\social{\aiOverleafSquare}
+% 			\social{\faArchive}
+% 				{https://de.overleaf.com/latex/templates/forty-seconds-cv/pztcktmyngsk}
+% 				{Overleaf Template Link}
+% 			\social{\faGithub}
+% 				{https://github.com/PandaScience/FortySecondsCV}
+% 				{Github Project Page Link}
+% 		\end{icontable}
+
+	\profilesection{Languages}
+	\pointskill{\flag{GB.png}}{English (Native)}{5}
+  	\pointskill{\flag{JP.png}}{Japanese (Adept)}{4}
+
+	\profilesection{Hard Skills}
+		\pointskill{\faGraduationCap}{Mathematica}{5}
+		\pointskill{\faGraduationCap}{Python}{4}
+		\pointskill{\faGraduationCap}{ROOT (CERN)}{3}
+		
+
+% 	\profilesection{Soft Skills}
+% 		\pointskill{\faHome}{Diplomat}{3}
+%  			\skill[1.8em]{\faCompress}{For later}
+% 		\pointskill{\faChild}{Chillin' hard}{3}[4]
+%  			\skill[1.8em]{\faCompress}{On a tree}
+
+	\profilesection{About Me}
+	\aboutme{\small
+		I am currently a PhD candidate at \textbf{The University of Alabama}. I currently work on modeling Quark Gluon Plasma-like fluids with broken symmetries under the guidance of \textbf{Dr. Matthias Kaminski}. We seek to understand such fluids with modern holographic techniques. Practically we work with classical gravity on the AdS ``gravity'' side to analyze the Quark Gluon Plasma-like fluid. Using novel spacetimes and classical theories of gravity to break symmetries, we can understand the properties of dual fluids. My current aspiration is to understand spin and its coupling to angular momentum in strongly coupled fluids - like the Quark Gluon Plasma.
+		%We work with Mathematica to understand the behavior of such fluids through the math General Relativity and the AdS/CFT Correspondence. I work with Frankfurt and Japanese Collaborators.
+	}
+	
+
+
+}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+
+\profilesection{Memberships}
+	\begin{memberships}
+		\membership[4em]{pics/standardmodel.png}{President - PAGSA (Physics Astronomy Graduate Student Association)}
+	\end{memberships}
+	
+\profilesection{Stats as of \today \\ Key: Published (for citable)}
+\begin{cvtable}
+    \cvitemshort{h-index }{$2~(2)$}
+    \cvitemshort{Citations }{$10~(10)$}
+    \cvitemshort{Publications }{$3$ research articles}
+    \cvitemshort{Citations per published paper}{$3.3~(3.3)$}
+    \cvitemshort{Talks Given }{$>8$}
+\end{cvtable}
+
+\profilesection{Past Memberships}
+	\begin{memberships}
+		\membership[4em]{pics/jacec.png}{Secretary - JACEC (Japanese American Cultural Exchange Club)}
+	\end{memberships}
+
+% 	\profilesection{Diagrams}
+% 	\chartlabel{Bubble Diagram}
+% 	\begin{figure}\centering
+% 		\smartdiagram[bubble diagram]{
+% 			\textcolor{white}{\textbf{Being a}} \\ 
+% 			\textcolor{white}{\textbf{Panda}}, % center bubble	
+% 			\textcolor{black!90}{Eating},
+% 			\textcolor{black!90}{Sleeping},
+% 			\textcolor{black!90}{Rolling},
+% 			\textcolor{black!90}{Playing},
+% 			\textcolor{black!90}{Chilling}
+% 		}
+% 	\end{figure}
+
+% 	\profilesection{Misc. Details}
+% 	\chartlabel{Skills}
+	
+% 	\barskill{\faCompress}{Origami}{60}
+% 	\barskill{\faImage}{Graphic Design}{35}
+% 	\barskill{\faGraduationCap}{Puzzles}{40}
+% 	\barskill{\faGraduationCap}{Piano}{50}
+	
+% 	\chartlabel{How I Spend Time}
+	
+% 	\wheelchart{4em}{2em}{%
+%   	33/3em/maincolor!50/Sleep,
+%   	26/3em/maincolor!15/Research,
+%   	5/3em/maincolor!20/Japanese,
+%   	14/3em/maincolor!50/Fun,
+%   	10/3em/maincolor!15/Family,
+%   	12/5em/maincolor!20/Other
+% 	}
+
+}
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+\cvsection{Notable Publications  \href{https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=a\%20M.Garbiso.f1&ui-citation-summary=true}{\textcolor{blue}{\underline{(iNSPIRE)}}} \href{https://arxiv.org/search/?searchtype=author&query=Garbiso\%2C+M}{\textcolor{blue}{\underline{(ar$\chi$iv)}}}}
+\begin{cvtable}
+	\cvpubitem{Hydrodynamics of simply spinning black holes \&  hydrodynamics for spinning quantum fluids}{Markus Garbiso, Matthias Kaminski}{JHEP}{December, 2020}
+	\cvpubitem{Resonating AdS Soliton}{Markus Garbiso, Takaaki Ishii, Keiju Murata}{JHEP}{August, 2020}
+	\cvpubitem{Dispersion relations in non-relativistic two-dimensional materials from quasinormal modes in Ho\v{r}ava Gravity}{Markus Garbiso, Matthias Kaminski}{JHEP}{October, 2019}
+\end{cvtable}
+
+
+% 	\begin{itemize}\small
+% 	    \item[$\odot$] Non-Relativistic Holography - \textit{Black Brane in  $AdS_4$}\\ Physics Used: AdS/CFT (gauge-gravity duality), Non-Relativistic Gravity Theories (Einstein-Aether Gravity and Ho\v rava Gravity), and non-relativistic hydrodynamics on and physics side//
+% 	    Math Used: differential geometry (limited diffeomorphic geometry), and systems of Fuchsian ODEs (solving them with a Pseudo-spectral method)
+% 	    \item[$\odot$] Holography with Global Spin - \textit{Simply Spinning Myers-Perry in $AdS_5$} \\ A theoretical project involving AdS/CFT (gauge-gravity duality), General Relativity (quasinormal modes, global conservation laws (angular momentum and energy)), and relativistic hydrodynamics on and physics side; and differential geometry (Lie Algebra, Field Decomposition on $S^3$), and systems of Fuchsian ODEs (solving them with a Pseudo-spectral method). 
+% 	    \item[$\odot$] First Order Formalism - \textit{Lovelock Gravity} - to study Holographic Spin D.O.F. \\ I used ...
+% 	    \item[$\odot$] Novel Holographic Solitons - \textit{Einstein Geons in $AdS_5$} \\ I used ...
+% 	    \item[$\odot$] Holographic Quantum Hydrodynamics for Scrambling and Many-body Chaos
+% 	\end{itemize}
+
+\cvsection{Professional Experience}
+\cvsubsection{Research}
+\begin{cvtable}[2]
+	\cvitem{Jan. 2017 -- Present}{Graduate Research}{The University of Alabama}
+	{Various Projects currently include:
+	\textit{Calculating QNMs(Quasi-Normal Modes) for Non-Relativistic Holography}(strongly coupled non-relativistic fluid), \textit{Calculating fluid properties and QNMs of a rotating relativistic fluid} (akin to a Quark Gluon Plasma), \textit{finding novel gravitational solutions in $AdS_5$} (Resonating Solitons), \textit{calculating quantum critical points for holographic scrambling and many-body chaos}, and \textit{high energy relativistic spin-hydrodynamics}  (via a first order formalism). Mathematica is being used for programming. I have used \textit{High-performance computing} (HPC) to undertake the calculation of QNMs. During my independent studies I have read up on and presented to the local High Energy Physics (HEP) group: anomalies in field theories (Chern classes), spin-bundles, and twisted geometries.
+	}
+	\cvitem{May 2013 -- Aug. 2016}{Undergraduate Research}{The Colorado School of Mines}{
+	Various projects the included: \textit{Classifying Nuclear Data}, \textit{Tested Impact of Porosity on Coking Sensors.} \textit{Python} and \textit{Mathematica} where used for programming.
+	}
+	\cvitem{Oct. 2014 -- Aug. 2015}{Junior Year Program in English (JYPE)}{Tohoku University}{
+	\textit{Helped to implement XFPS to analyze photon beams}. Programming was done with \textit{ROOT} (CERN).
+	}
+\end{cvtable}
+\cvsubsection{Teaching/Tutoring}
+\begin{cvtable}[2]
+	\cvitem{Sep. 2017 -- Present}{Part Time Physics/Math Tutor}{Applied Tutoring}{%I am doing part-time contract work with Applied Tutoring for almost all math and physics undergraduate classes.
+	}
+	\cvitem{Aug. 2016 -- Present}{Graduate Teaching Assistant}{University of Alabama}{%I help professors teach their classes. I grade worksheets/labs, proctor examinations, tutor students, and teach classes. Teaching classes entails the design of effective quizzes/assignments and lecturing recitations.
+	}
+	\cvitem{Jul. 2020 -- Jul. 2020}{Physics Instructor}{University of Alabama}{Introduction to Electromagnetism and Modern Physics}
+ 	\cvitem{Aug. 2015 -- May 2016}{Center for Academic Services and Advising (CASA) Tutor}{The Colorado School of Mines}{}
+ 	\cvitem{Jan. 2013 -- May 2013}{Center for Academic Services and Advising (CASA) Tutor}{The Colorado School of Mines}{}
+ 	\cvitem{Jan. 2013 -- May 2013}{Multicultural Engineering Program Tutor}{The Colorado School of Mines}{}
+%	\cvitem{2013}{Undergraduate Research Assistant}{The Colorado School of Mines}{``Fuel reforming systems'' transform hydrocarbon fuels (gasoline and methane) into synthesis gas (CO \& $\mbox{O}_2$). 
+	%If the concentration of carbon is too high, solid carbon starts to coat (coking), causing damage to the catalyst. I helped test a sensor of carbon to help prevent coking and presented my results at a poster session. This REU was apart of the NSF Research Experiences for Undergraduates program.}
+\end{cvtable}
+
+\newpage
+\makebacksidebar
+
+\cvsection{Education}
+\cvsubsection{Postgraduate Training}
+\begin{cvtable}[1]
+	\cvitem{2020 -- 2021}{Physics PhD Candidate}{GPA: 3.939 - The University of Alabama}{\textbf{May 2021} is the expected graduation date}
+	\cvitem{2016 -- 2019}{Physics PhD Student}{GPA: 3.939 - The University of Alabama}{}
+\end{cvtable}
+
+
+\cvsubsection{Undergraduate Study}
+\begin{cvtable}[1.5]
+	\cvitem{2012 -- 2016}{B.S. Engineering Physics}{GPA: 3.586 - The Colorado School of Mines}
+		{%Studying undergraduate physics with a strong emphasis placed on engineering aspects.
+		}
+	\cvitem{2014 -- 2015}{Junior Year Program in English (JYPE)}{Tohoku University}
+		{%I fixed an annealing sensor using \textbf{CERN Root} coding
+		}
+\end{cvtable}
+
+\cvsection{Current Projects}
+\begin{cvtable}
+\cvitem{Jun. 2020 -- Present}{Holography with Spin}{}{We seek to introduce spin degrees of freedom into hydrodynamics. Using Lovelock Chern-Simons gravity we hope to expand on the work by Gallegos and G{\"u}rsoy - \textit{Holographic spin liquids and Lovelock Chern-Simons gravity}.}
+\cvitem{Jun. 2020 -- Present}{Chaos and Hydrodynamics}{}{We hope to find chaos related quantities - Lyapunov exponent and butterfly velocity - for novel hologrphic gravity backgrounds. Keywords: Pole-Skipping Points, Convergence of hydrodynamic, Chaos Points
+%to measure chaos of holographic systems with linear perturbations
+}
+	%\cvitem{2019 -- Present}{Globally Rotating Fluid via Holography}{}{For large simply rotating black holes (Simply Spinning Kerr AdS 5D) in 5D AdS spacetime. We analyze the dual conformal fluid's transport. We also look at first order perturbation dynamics around Simply Spinning Kerr AdS 5D. 
+	%I am currently looking a fluid dual to a five dimensional rotating spacetime, Myers-Perry in asymptotically 5D AdS. I am analyzing the dispersion and hydrodynamic regime of a previously overlooked tensor sector. This project is to be published soon.}
+\end{cvtable}
+
+\cvsection{Science Communication}
+\cvsubsection{Notable Talks}
+\begin{cvtable}
+	\cvitem{Feb. 2020}{Research Seminar}{Tokyo University}{Globally Rotating Holographic Fluid Hydrodynamics}
+	\cvitem{Feb. 2020}{Research Seminar}{Ochanomizu University}{Globally Rotating Holographic Fluid Hydrodynamics}
+	\cvitem{Feb. 2020}{Research Seminar}{Chuo University}{Globally Rotating Holographic Fluid Hydrodynamics}
+	\cvitem{July 2019}{Research Seminar}{W$\ddot{\mbox{u}}$rzburg University}{Non-Relativistic Hydrodynamics}
+    \cvitem{July 2017}{Conference Talk}{3rd Karl Schwarzschild Meeting at FIAS, Frankfurt}{Non-Relativistic Hydrodynamics}
+	\cvitem{July 2019}{Research Seminar}{Frankfurt Institute for Advanced Studies}{Non-Relativistic Hydrodynamics}
+\end{cvtable}
+
+\cvsubsection{International Collaborations}
+\begin{cvtable}
+    \cvitem{Nov. 2019 -- Present}{Spin-Orbital Coupling}{Frankfurt Institute for Advanced Studies (FIAS)}{We are working with Enrico Speranza (Frankfurt University, Germany) generalizing the hydrodynamic description to include spin degrees of freedom and rotation.}
+	\cvitem{Feb. 2020 -- Jul. 2020}{Resonating AdS Soliton}{Nihon University \& Kyoto University}{Worked with Professors Keiju Murata (Nihon University, Japan) and Takaaki Ishi (Kyoto University, Japan), we investigated an ``AdS Soliton Resonator''. 
+	%This is a gravitation study of a gravitational soliton which has been deformed (generated by a tensor normal mode) such that the spacetime is time dynamical with a non-zero angular momentum. 
+	%We are looking at non-linear effects and are also interested in it's applications for AdS/CFT.
+	}
+\end{cvtable}
+
+%\cvsection{Extra-Curricular Activities}
+% \begin{cvtable}
+% 	\cvitemshort{Relaxing}{Playing video games and role-playing games with friends and family.}
+% 	\cvitemshort{Music}{Occasionally perform in a taiko (a Japanese drum) group for community events.}
+% 	\cvitemshort{Entertainer}{I stream 2 hours on Thursdays and Sundays at  \href{https://www.twitch.tv/frogstud}{twitch.tv/frogstud}}
+% 	\cvitemshort{Social}{Drinks on Friday at Loosa Brews!}
+% 	\cvitemshort{Culinary}{I enjoy mastering dishes to eat or serve.}
+% \end{cvtable}
+
+\cvsection{Honors \&  Awards}
+\begin{cvtable}
+    \cvitem{March, 2020}{Outstanding Research by a Master’s Student}{The University of Alabama}{}
+    \cvitem{2016 -- }{GTA Fellowship}{The University of Alabama}{}
+    \cvitem{2014 -- 2015}{JASSO Scholarship}{Tohoku University}{}	
+	\cvitem{2009 -- 2012}{Deans List}{The Colorado School of Mines}{}
+	\cvitem{2008}{Private Donation (USD 1,000)}{Anonymous Private Donor}{}
+\end{cvtable}
+
+% \cvsubsection{Subsection}
+% \begin{cvtable}
+% 	\cvitem{<dates>}{<cv-item title>}{<location>}{<optional: description>}
+% \end{cvtable}
+
+% \cvsection{cvitem}
+% \cvsubsection{Multi-line with longer description}
+% \begin{cvtable}
+% 	\cvitem{date}{Description}{location}{Some longer and more detailed 
+% 		description, that takes two lines	of space instead of only one.}
+% 	\cvitem{date}{Description}{location}{Some longer and more detailed 
+% 		description, that takes two lines	of space instead of only one.}
+% 	\cvitem{date}{Description}{location}{Some longer and more detailed 
+% 		description, that takes two lines	of space instead of only one.}
+% \end{cvtable}
+
+% \cvsubsection{One-line without description}
+% \begin{cvtable}
+% 	\cvitem{Award}{One-line description}{Sponsor}{}
+% 	\cvitem{Award}{One-line description}{Sponsor}{}
+% 	\cvitem{Award}{One-line description}{Sponsor}{}
+% \end{cvtable}
+
+% \cvsection{cvitemshort}
+% \cvsubsection{One-line}
+% \begin{cvtable}
+% 	\cvitemshort{Key}{Some further description}
+% 	\cvitemshort{Key}{Some further description}
+% 	\cvitemshort{Key}{Some further description}
+% \end{cvtable}
+
+% \cvsubsection{Multi-line with longer description}
+% \begin{cvtable}
+% 	\cvitemshort{Key}{Some further description. Can fill even more than
+% 		only one single line while still keeping the correct indendation level.}
+% 	\cvitemshort{Key}{Some further description. Can fill even more than
+% 		only one single line while still keeping the correct indendation level.}
+% 	\cvitemshort{Key}{Some further description. Can fill even more than
+% 		only one single line while still keeping the correct indendation level.}
+% \end{cvtable}
+
+% \cvsection{cvpubitem}
+% \begin{cvtable}
+% 	\cvpubitem{Publication title}{Authors}{Journal}{Year}
+% 	\cvpubitem{Publication title}{Authors}{Journal}{Year}
+% 	\cvpubitem{Publication title that is spanning over multiple lines and still
+% 		does not look too bad}{Authors}{Journal}{Year}
+% \end{cvtable}
+
+% \includegraphics[width=0.5 \textwidth]{pics/digital_signature.png}
+
+%\cvsignature
+
+\end{document} 
