@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.6.6)  6 JUN 2021 12:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.6.6)  6 JUN 2021 20:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -778,8 +778,7 @@ ns.code.tex)
 (/usr/share/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.styles.co
 de.tex)
 (/usr/share/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.commands.
-code.tex))
-No file main.aux.
+code.tex)) (build/main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 216.
 LaTeX Font Info:    ... okay on input line 216.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 216.
@@ -796,6 +795,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 216.
 LaTeX Font Info:    ... okay on input line 216.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 216.
 LaTeX Font Info:    ... okay on input line 216.
+
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count296
@@ -869,6 +869,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 216.
 LaTeX Info: Redefining \pageref on input line 216.
 LaTeX Info: Redefining \nameref on input line 216.
+
+(build/main.out) (build/main.out)
 \@outlinefile=\write4
 LaTeX Info: Redefining \microtypecontext on input line 216.
 Package microtype Info: Generating PDF output.
@@ -885,8 +887,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ClearSans-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-ABD: EverySelectfont initializing macros
+ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 216.
 <pics/profile.jpg, id=34, 2561.57pt x 2561.57pt>
 File: pics/profile.jpg Graphic file (type jpg)
@@ -914,17 +915,13 @@ LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
 (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd)
 (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd)
 (/usr/share/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 218--218
-[]|[][]$[]$
- []
-
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <12> not availabl
 e
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
 put line 218.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
 (Font)              scaled to size 12.0pt on input line 218.
-<pics/flags//GB.png, id=47, 64.24pt x 64.24pt>
+<pics/flags//GB.png, id=44, 64.24pt x 64.24pt>
 File: pics/flags//GB.png Graphic file (type png)
 <use pics/flags//GB.png>
 Package pdftex.def Info: pics/flags//GB.png  used on input line 218.
@@ -935,7 +932,7 @@ LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <7> not available
 put line 218.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
 (Font)              scaled to size 7.0pt on input line 218.
-<pics/flags//JP.png, id=49, 64.24pt x 64.24pt>
+<pics/flags//JP.png, id=46, 64.24pt x 64.24pt>
 File: pics/flags//JP.png Graphic file (type png)
 <use pics/flags//JP.png>
 Package pdftex.def Info: pics/flags//JP.png  used on input line 218.
@@ -971,7 +968,7 @@ nput line 222.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
 (Font)              scaled to size 10.0pt on input line 222.
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--226
+Underfull \hbox (badness 10000) in paragraph at lines 222--227
 
  []
 
@@ -982,13 +979,7 @@ put line 243.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
 (Font)              scaled to size 8.0pt on input line 243.
 
-Underfull \hbox (badness 4168) in paragraph at lines 243--243
-\T1/ClearSans-TLF/regular/it/10 Modes) for Non-Relativistic Holog-ra-phy\T1/Cle
-arSans-TLF/regular/n/10 (+20) (strongly cou-pled non-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--251
+Underfull \hbox (badness 10000) in paragraph at lines 240--251
 
  []
 
@@ -1005,66 +996,52 @@ File: pics/standardmodel.png Graphic file (type png)
 <use pics/standardmodel.png>
 Package pdftex.def Info: pics/standardmodel.png  used on input line 266.
 (pdftex.def)             Requested size: 40.0pt x 39.99306pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
-
- []
-
 File: pics/jacec.png Graphic file (type png)
 <use pics/jacec.png>
 Package pdftex.def Info: pics/jacec.png  used on input line 266.
 (pdftex.def)             Requested size: 40.0pt x 29.9948pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--274
+Underfull \hbox (badness 10000) in paragraph at lines 270--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--285
+Underfull \hbox (badness 10000) in paragraph at lines 276--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--295
+Underfull \hbox (badness 10000) in paragraph at lines 287--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--306
+Underfull \hbox (badness 10000) in paragraph at lines 298--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--315
+Underfull \hbox (badness 10000) in paragraph at lines 308--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--333
+Underfull \hbox (badness 10000) in paragraph at lines 326--332
 
  []
 
 [2 <./pics/standardmodel.png> <./pics/jacec.png>] (build/main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24119 strings out of 479383
- 454808 string characters out of 5875831
- 842624 words of memory out of 5000000
+ 24116 strings out of 479383
+ 454709 string characters out of 5875831
+ 837948 words of memory out of 5000000
  40640 multiletter control sequences out of 15000+600000
- 476995 words of font info for 114 fonts, out of 8000000 for 9000
+ 476332 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 136i,15n,137p,832b,1152s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 136i,15n,137p,672b,1152s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/s
 hare/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texm
 f-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}{/usr/share/texmf-dist/
@@ -1072,15 +1049,12 @@ fonts/enc/dvips/clearsans/clr_zxbkm4.enc}</usr/share/texmf-dist/fonts/type1/int
 el/clearsans/ClearSans-Bold.pfb></usr/share/texmf-dist/fonts/type1/intel/clears
 ans/ClearSans-Italic.pfb></usr/share/texmf-dist/fonts/type1/intel/clearsans/Cle
 arSans-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome/FontAw
-esome.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb>
-Output written on build/main.pdf (2 pages, 1750711 bytes).
+esome.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on build/main.pdf (2 pages, 1723431 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  15506 words of extra memory for PDF output out of 17280 (max. 10000000)
 

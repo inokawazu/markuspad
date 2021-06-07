@@ -3,6 +3,6 @@
 
 # CV & Past Publications
 
-![CV (PDF)](assets/markus_amano_cv.pdf)	
+[CV (PDF)](/assets/markus_amano_cv.pdf)	
 
-![Past Publications (PDF)](assets/markus_amano_publications.pdf)
+[Past Publications (PDF)](/assets/markus_amano_publications.pdf)
