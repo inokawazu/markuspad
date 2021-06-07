@@ -9,3 +9,4 @@ This is my personal/professional blog. Please take a look around.
 
 - **[Research](/research)**
 - **[My Story](/about)**
+- **[CV and Contact Me](/resume)**
